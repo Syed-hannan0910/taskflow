@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply border-border;
-  }
   body {
     @apply bg-slate-950 text-slate-100 font-sans antialiased;
   }
@@ -28,14 +25,8 @@
   .glass {
     @apply bg-white/5 backdrop-blur-xl border border-white/10;
   }
-  .glass-hover {
-    @apply hover:bg-white/10 transition-all duration-200;
-  }
   .gradient-text {
     @apply bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent;
-  }
-  .card {
-    @apply glass rounded-2xl p-6;
   }
   .input-field {
     @apply w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white
@@ -46,14 +37,10 @@
     @apply bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-500 hover:to-violet-500
            text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200
            shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 active:scale-95
-           disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100;
+           disabled:opacity-50 disabled:cursor-not-allowed;
   }
   .btn-secondary {
     @apply bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-3 rounded-xl
            transition-all duration-200 border border-white/10 active:scale-95;
-  }
-  .btn-danger {
-    @apply bg-red-500/10 hover:bg-red-500/20 text-red-400 font-medium px-4 py-2 rounded-lg
-           transition-all duration-200 border border-red-500/20 active:scale-95;
   }
 }
